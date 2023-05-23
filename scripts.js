@@ -1,0 +1,1 @@
+var url="https://raw.githubusercontent.com/alexgmzdev/urlapiweather/main/openweaterapi.json";
