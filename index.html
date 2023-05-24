@@ -8,13 +8,16 @@
     <title>El Tiempo - Todo Madrid</title>
 </head>
 <body>
-    <header class="menu">
-    <div class="forma-busqueda">    
+    <div class="contenedor">
+        <h1>Busca tu ciudad</h1>
+    
         <div class="busqueda">
-            <input class="buscar" id="busqueda" type="text" autocomplete="off" placeholder="Busca la ciudad...">
+        <input type="text" id="ciudad" placeholder="Ingresa el nombre de tu ciudad">
+        <button onclick="mostrarTiempo()">Buscar</button>
         </div>
+
+        <div id="info-tiempo"></div>
     </div>
-    </header>
-    <footer id="rrss"></footer>
+
 </body>
 </html>
