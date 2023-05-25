@@ -1,5 +1,5 @@
-function crearElementos () {
 
+function Datos () {
     var url="https://raw.githubusercontent.com/alexgmzdev/urlapiweather/main/openweaterapi.json";
 
     fetch(url) 
