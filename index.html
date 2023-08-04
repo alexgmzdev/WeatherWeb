@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="media/logo100.png">
     <title>El Tiempo - Todo Madrid</title>
 </head>
+
 <body>
+    <header>
+            <nav>
+                <ul class="contenedor-md"> <!--MD de modo de pantalla-->
+                    <li class="switch" id="switch">
+                        <i class="bi bi-brightness-high-fill"></i>
+                        <i class="bi bi-moon-fill"></i>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <script src="lg-dkmode.js"></script>
+    <!--=============INICIO CAJA BUSCADORA=============-->
     <div class="contenedor">
-        <h1>Busca tu ciudad</h1>
-    
-        <div class="busqueda">
-        <input type="text" id="ciudad" placeholder="Ingresa el nombre de tu ciudad">
-        <button id="boton_busqueda" onclick="Datos()">Buscar</button>
+        <div id="info-tiempo">
+            <h1>Busca tu ciudad</h1>
+            <div class="busqueda">
+                <input type="text" id="ciudad" placeholder="Ingresa el nombre de tu ciudad">
+                <button id="boton_busqueda" onclick="Datos()">Buscar</button>
+            </div>
         </div>
 
-        <div id="info-tiempo"></div>
     </div>
-
+    <!--=============FIN CAJA BUSCADORA=============-->
+    <script src="scripts.js"></script>
+    <!--=============PIE DE PÁGINA=============-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <a href="index.html">
+                    <figure>
+                        <img src="media/logo200.png" alt="El tiempo Madrid">
+                    </figure>
+                </a>
+            </div>
+            <div class="box2">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>El tiempo de la Comunidad de Madrid</p>
+                <p>A un solo click.</p>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>alexgmzdev</b> - Todos los Derechos Reservados.</small>
+            </div>
+    </footer>
+    <!--=============FIN PIE DE PÁGINA=============-->
 </body>
+
 </html>
